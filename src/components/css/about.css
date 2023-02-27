@@ -1,0 +1,79 @@
+/* * {
+  box-sizing: border-box;
+} */
+
+.about {
+  /* height: 100vh; */
+  /* overflow-y: scroll; */
+  /* width: 99vw; */
+  background-color: var(--white);
+  font-family: Helvetica, sans-serif;
+  /* z-index: -1; */
+}
+
+.aboutrow {
+  flex-wrap: wrap;
+  width: 55%;
+  justify-items: center;
+}
+.aboutpara {
+  margin: auto;
+  position: relative;
+  padding: 0 0 10px 10%;
+  text-align: justify;
+  max-width: 600px;
+}
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  .about {
+    margin-top: 10vh;
+  }
+  .aboutrow {
+    width: 80%;
+    margin: auto;
+  }
+  .aboutillus {
+    width: 100% !important;
+    position: relative !important;
+    top: 0px !important;
+    height: fit-content !important;
+  }
+  .aboutillus img {
+    display: none !important;
+    top: 0% !important;
+    position: relative;
+    width: 65% !important;
+  }
+  .abouthead {
+    margin-top: 5% !important;
+  }
+  .aboutpara {
+    margin-top: 5%;
+    text-align: center;
+    padding: 4px 15px;
+  }
+}
+.aboutillus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  width: 45%;
+}
+.abouthead {
+  font-size: xx-large;
+  padding: 0px 10px;
+  font-family: system-ui;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.aboutillus img {
+  max-width: 500px;
+  padding: 50px 0;
+  background-color: var(--dblue);
+  border-radius: 100% 0 0 100%;
+  box-shadow: 0 4px 15px 0 rgb(0 0 0 / 0.7);
+}
