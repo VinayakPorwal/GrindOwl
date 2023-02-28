@@ -19,7 +19,7 @@ export const UserContext = createContext();
 function App() {
   const [user, setUser] = useState();
   const [mode, setMode] = useState("lightbulb");
-  var [bgcolor, setBgcolor] = useState("Black");
+  var [bgcolor, setBgcolor] = useState("#252525");
   var [Pcolor, setPcolor] = useState("white");
   var [SecondaryColor, setSecondaryColor] = useState("#111111");
   var [token, setToken] = useState(0);
@@ -49,20 +49,20 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
-      <UserContext.Provider
-        value={{
-          userData,
-          setUserData,
-          setToken,
-          token,
-          user,
-          myFunction,
-          bgcolor,
-          Pcolor,
-          SecondaryColor,
-        }}
-      >
+    <UserContext.Provider
+      value={{
+        userData,
+        setUserData,
+        setToken,
+        token,
+        user,
+        myFunction,
+        bgcolor,
+        Pcolor,
+        SecondaryColor,
+      }}
+    >
+      <BrowserRouter>
         <div
           style={{ position: "fixed", top: "0px", width: "100vw", zIndex: "2" }}
         >
@@ -100,8 +100,8 @@ function App() {
 
         {/* <Footer /> */}
         <Member />
-      </UserContext.Provider>
-    </BrowserRouter>
+      </BrowserRouter>
+    </UserContext.Provider>
   );
 }
 

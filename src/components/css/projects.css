@@ -703,6 +703,7 @@
   background: none;
   height: -webkit-fill-available !important;
   padding: 4px;
+  width: 100%;
   border-radius: 15px;
   margin: auto;
 }
@@ -994,6 +995,7 @@
 .ProjectCard-card-img > img {
   border-radius: 0.5rem;
   object-fit: cover;
+  width: 100%;
   height: -webkit-fill-available;
 }
 
